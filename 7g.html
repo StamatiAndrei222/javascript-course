@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      function convertLenght(lenght, from, to){
+        if(from === 'km' && to === 'miles'){
+          return `${lenght / 1.6} miles`;
+        } else if(from === 'miles' && to === 'km'){
+          return `${lenght * 1.6}km`;
+        } else if(from === to){
+          return `${lenght} ${to}`;
+        }
+      }
+    </script>
+  </body>
+</html>
