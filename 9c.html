@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+      <button onclick="updateDisplay('heads')">heads</button>
+      <button onclick="updateDisplay('tails')">tails</button>
+      <p class="js-result"></p>
+
+    <script>
+      
+      let result = '';
+      function updateDisplay(choise){
+        if( choise === 'heads'){
+          result = 'heads';
+        }else{
+          result = 'tails';
+        }
+
+        document.querySelector('.js-result')
+      .innerHTML = `You chose: ${result}`;
+      }
+      
+
+     
+    </script>
+  </body>
+</html>
